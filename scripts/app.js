@@ -95,9 +95,6 @@ Yike.controller('TodayCtrl', ['$scope', '$http', '$filter', '$rootScope', functi
 	// 格式化数据
 	var today = $filter('date')(new Date, 'yyyy-MM-dd');
 
-	// 在现实中经常有需求需要前端传递一个时间（处理一定格式的）
-	// 如果有AngularJS的过滤器会非常方便
-	// 但是如果完全自已原生手工处理，时间格式化是非常烦索
 
 	// 全局变量，标明是否加载完成
 	$rootScope.loaded = false;
